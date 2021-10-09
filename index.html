@@ -15,6 +15,10 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+         <!-- DataTables -->
+        <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -30,7 +34,6 @@
                         <li class="nav-item" ><a class="nav-link" href="#services" >Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about" >Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team" >Equipo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact" >Contactenos</a></li>
                     </ul>
                 </div>
@@ -93,7 +96,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/mangueras.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Mangueras, tuberías, racores, adaptadores hidráulicos</div>
+                                <div class="portfolio-caption-heading">Mangueras, tuberías, racores, acoples</div>
                                 <!-- <div class="portfolio-caption-subheading text-muted">Lorem ipsum dolor sit </div> -->
                             </div>
                         </div>
@@ -108,7 +111,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/cilindro.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Cilindros, valvulas, bombas hidráulicas</div><br>
+                                <div class="portfolio-caption-heading">Cilindros, valvulas, bombas hidráulicas</div>
                                <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
                             </div>
                         </div>
@@ -123,7 +126,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/404.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Instalación</div><br><br><br>
+                                <div class="portfolio-caption-heading">Instalación</div><br><br>
                               <!--  <div class="portfolio-caption-subheading text-muted">Identity</div> -->
                             </div>
                         </div>
@@ -389,29 +392,299 @@
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-12">
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <!-- Portfolio 1-->
                                     <h2 class="text-uppercase">Mangueras</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mangueras2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa 
+                                        incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum,
+                                        reiciendis facere nemo!</p>
+                                    <!-- Acordeon 1-->
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h1 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+                                              <b>TABLA DE REFERENCIAS</b>
+                                            </button>
+                                          </h1>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <table id="example1" class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                          <th>Tipo</th>
+                                                          <th>Referencia</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Hidráulica Alfagomma R2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Hidráulica Alfagomma R5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Hidráulica Alfagomma R12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Hidráulica Alfagomma R13</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Caucho y Lona Alfagomma Martillo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Alfagomma Alimentos</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Alfagomma</td>
+                                                            <td>Manguera Vapor Alfagomma</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hidráulica</td>
+                                                            <td>Manguera Hidráulica Strong R1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hidráulica</td>
+                                                            <td>Manguera Hidráulica Strong R2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hidráulica</td>
+                                                            <td>Manguera Hidráulica Strong R12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hidráulica</td>
+                                                            <td>Manguera Hidráulica Strong R13</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Industrial</td>
+                                                            <td>Manguera Strong Tank Truck Succión y Descargue de Combustible</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Industrial</td>
+                                                            <td>Manguera Strong Aire Vacio</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mineria</td>
+                                                            <td>Manguera Caucho y Lona Minera Amarilla</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Multiproposito</td>
+                                                            <td>Manguera Caucho y Lona Multipropósito Negra</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Multiproposito</td>
+                                                            <td>Manguera Caucho y Lona Multipropósito Roja</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Oxicorte</td>
+                                                            <td>Manguera Strong Oxicorte</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Poliuretano</td>
+                                                            <td>Manguera Poliuretano Azul</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Poliuretano</td>
+                                                            <td>Manguera Poliuretano Negra</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PVC</td>
+                                                            <td>Manguera Azul Plana Tipo Bombero Strong</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PVC</td>
+                                                            <td>Manguera PVC Transparente Refuerzo en Nylon Strong</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PVC</td>
+                                                            <td>Manguera PVC Transparente Refuerzo en Acero Strong</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Servicios</td>
+                                                            <td>Manguera Strong Car Wash</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Servicios</td>
+                                                            <td>Manguera Strong Fuel Dispenser</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Strong</td>
+                                                            <td>Manguera Strong R5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Strong</td>
+                                                            <td>Manguera Strong R7 2250 PSI</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Strong</td>
+                                                            <td>Manguera Strong R6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Strong</td>
+                                                            <td>Manguera R115 Teflón</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Portfolio 2--><br>
+                                    <h2 class="text-uppercase">Acoples</h2>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/racores.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <!-- Portfolio 2-->
+                                     <!-- Acordeon 2-->
+                                     <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h1 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+                                              <b>TABLA DE REFERENCIAS</b>
+                                            </button>
+                                          </h1>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <table id="example1" class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                          <th>Tipo</th>
+                                                          <th>Referencia</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Abrazadera</td>
+                                                            <td>Hércules</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Hembra NPS Acero Carbón</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Hembra JIC Acero Carbón</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Hembra NPS Inoxidable</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Hembra JIC Inoxidable</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Macho NPT Acero Carbón</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople S96 Macho NPT Inoxidable</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Macho R2 NPT</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 NPS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Macho R12 NPT</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R12 NPS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 NPS a 45°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 NPS a 90°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R12 NPS a 45°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R12 NPS a 90°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Macho R2 JIC</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 JIC</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Macho R12 JIC</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R12 JIC</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 JIC a 45°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Acople Hembra R2 JIC a 90°</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera PVC Transparente Refuerzo en Acero Strong</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera Strong Car Wash</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera Strong Fuel Dispenser</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera Strong R5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera Strong R7 2250 PSI</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera Strong R6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Acoples</td>
+                                                            <td>Manguera R115 Teflón</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio 3--><br>
                                     <h2 class="text-uppercase">Tuberias y Racores</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/racores.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <!-- <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul> -->
+                         
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Volver a portafolio
@@ -607,5 +880,90 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- DataTables  & Plugins -->
+        
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+        <script src="plugins/jszip/jszip.min.js"></script>
+
+        <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+        <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+        <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+
+        <script>
+            $.extend( true, $.fn.dataTable.defaults, {
+    "language": {
+        "decimal": ",",
+        "thousands": ".",
+        "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+        "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+        "infoPostFix": "",
+        "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+        "loadingRecords": "Cargando...",
+        "lengthMenu": "Mostrar _MENU_ registros",
+        "paginate": {
+            "first": "Primero",
+            "last": "Último",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        },
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "searchPlaceholder": "Término de búsqueda",
+        "zeroRecords": "No se encontraron resultados",
+        "emptyTable": "Ningún dato disponible en esta tabla",
+        "aria": {
+            "sortAscending":  ": Activar para ordenar la columna de manera ascendente",
+            "sortDescending": ": Activar para ordenar la columna de manera descendente"
+        },
+        //only works for built-in buttons, not for custom buttons
+        "buttons": {
+            "create": "Nuevo",
+            "edit": "Cambiar",
+            "remove": "Borrar",
+            "copy": "Copiar",
+            "csv": "fichero CSV",
+            "excel": "tabla Excel",
+            "pdf": "documento PDF",
+            "print": "Imprimir",
+            "colvis": "Visibilidad columnas",
+            "collection": "Colección",
+            "upload": "Seleccione fichero...."
+        },
+        "select": {
+            "rows": {
+                _: '%d filas seleccionadas',
+                0: 'clic fila para seleccionar',
+                1: 'una fila seleccionada'
+            }
+        }
+    }           
+} );       
+
+            $(function () {
+              $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+               
+              }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+              $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+              });
+            });
+
+            
+        </script>
+
     </body>
 </html>
